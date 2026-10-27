@@ -1,0 +1,38 @@
+{
+  "duckdb_version": "1.5.6",
+  "cluster_passes": 2,
+  "duckdb_sql_seconds": 0.31,
+  "all_identical": true,
+  "tables": {
+    "profile_summary": {
+      "rows": 6,
+      "identical": true,
+      "detail": "0 differing cells"
+    },
+    "source_profile": {
+      "rows": 3,
+      "identical": true,
+      "detail": "0 differing cells"
+    },
+    "match_edges": {
+      "rows": 699,
+      "identical": true,
+      "detail": "0 differing cells"
+    },
+    "match_clusters": {
+      "rows": 5219,
+      "identical": true,
+      "detail": "0 differing cells"
+    },
+    "golden_records": {
+      "rows": 4557,
+      "identical": true,
+      "detail": "0 differing cells"
+    },
+    "validation_summary": {
+      "rows": 7,
+      "identical": true,
+      "detail": "0 differing cells"
+    }
+  }
+}

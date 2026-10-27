@@ -1,0 +1,111 @@
+{
+  "true_customers": 4517,
+  "predicted_golden_records": 4557,
+  "true_duplicate_pairs": 742,
+  "predicted_pairs": 699,
+  "true_positive_pairs": 699,
+  "false_positive_pairs": 0,
+  "false_negative_pairs": 43,
+  "precision": 1.0,
+  "recall": 0.9420485175202157,
+  "f1": 0.9701596113809854,
+  "bcubed_precision": 1.0,
+  "bcubed_recall": 0.9921440889059207,
+  "bcubed_f1": 0.996056554775416,
+  "purity": 1.0,
+  "customers_reproduced_exactly": 4477,
+  "multi_record_customers": 662,
+  "multi_record_customers_reproduced_exactly": 622,
+  "over_merged_clusters": 0,
+  "raw_records": 5219,
+  "golden_records": 4557,
+  "records_merged": 662,
+  "reconciliation": {
+    "records_merged": 662,
+    "true_redundant_records": 702,
+    "unmerged_redundant_records": 40,
+    "reconciles": true
+  },
+  "validation_all_rules": {
+    "raw": 0.0772,
+    "standardized": 0.7388,
+    "golden": 0.7667
+  },
+  "missed_pair_reasons": {
+    "shared key but a name is blank (single key not accepted)": 35,
+    "no shared phone/email/name+pincode": 8
+  },
+  "validation_like_for_like": {
+    "standardized_per_cluster": 0.7356447955526296,
+    "golden": 0.7667324994513934,
+    "merge_lift_pp_like_for_like": 3.1087703898763808,
+    "all_fields_present_after_standardization": 0.7430542249473079
+  },
+  "insights": {
+    "unfixable_rate_by_field": {
+      "city": 0.0358,
+      "email": 0.0362,
+      "full_name": 0.0364,
+      "phone": 0.0514,
+      "pincode": 0.0314,
+      "signup_date": 0.0423
+    },
+    "needs_fix_rate_by_field": {
+      "city": 0.3338,
+      "email": 0.3298,
+      "full_name": 0.3317,
+      "phone": 0.3692,
+      "pincode": 0.3418,
+      "signup_date": 0.339
+    },
+    "raw_pass_rate_by_source": {
+      "CRM": 0.0825,
+      "Sales": 0.0743,
+      "Web": 0.0748
+    },
+    "cluster_sizes": {
+      "1": 3932,
+      "2": 588,
+      "3": 37
+    },
+    "golden_without_phone_and_email": 11,
+    "golden_without_phone": 206,
+    "golden_without_email": 192,
+    "rejected_pairs_name_conflict": 24,
+    "rejected_pairs_name_blank": 38,
+    "records_in_multi_system_golden": 1287,
+    "weakest_rule_after_standardization": {
+      "rule_id": "R1",
+      "field": "Name",
+      "std_pass_rate": 0.9442
+    },
+    "weakest_rule_raw": {
+      "rule_id": "R2",
+      "field": "Phone",
+      "raw_pass_rate": 0.6308
+    },
+    "top_cities": [
+      [
+        "Bengaluru",
+        344
+      ],
+      [
+        "Hyderabad",
+        340
+      ],
+      [
+        "Delhi",
+        333
+      ]
+    ],
+    "rule_counts": {
+      "email|Medium": 18,
+      "email+name_pincode|High": 122,
+      "name_pincode|Medium": 40,
+      "phone|Medium": 27,
+      "phone+email|High": 66,
+      "phone+email+name_pincode|High": 249,
+      "phone+name_pincode|High": 177
+    }
+  }
+}

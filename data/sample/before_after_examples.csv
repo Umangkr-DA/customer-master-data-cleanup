@@ -1,0 +1,37 @@
+record_id,field,outcome,before,after
+CRM-00001,phone,standardized,07057488399,7057488399
+CRM-00002,phone,standardized,(+91) 9562807335,9562807335
+CRM-00004,phone,standardized,918478872874,8478872874
+CRM-00001,city,standardized,KOLKATA,Kolkata
+CRM-00011,city,standardized,lucknow,Lucknow
+CRM-00013,city,standardized,nagpur,Nagpur
+CRM-00002,pincode,standardized,440-727,440727
+CRM-00007,pincode,standardized,302 911,302911
+CRM-00016,pincode,standardized,600-163,600163
+CRM-00002,signup_date,standardized,26 November 2018,2018-11-26
+CRM-00003,signup_date,standardized,09/01/2023,2023-01-09
+CRM-00004,signup_date,standardized,2024/03/13,2024-03-13
+CRM-00005,email,standardized,Priya.sinha5654@hotmail.com,priya.sinha5654@hotmail.com
+CRM-00006,email,standardized,ROHIT.KHANNA3311@OUTLOOK.COM,rohit.khanna3311@outlook.com
+CRM-00008,email,standardized,pankaj.gupta2329@rediffmail.co,pankaj.gupta2329@rediffmail.com
+CRM-00010,full_name,standardized,"Chatterjee, Rajesh",Rajesh Chatterjee
+CRM-00013,full_name,standardized,RAJESH DESAI,Rajesh Desai
+CRM-00019,full_name,standardized,Dr. Preeti Shinde,Preeti Shinde
+CRM-00015,pincode,unfixable -> left blank,11077A,
+CRM-00043,pincode,unfixable -> left blank,22602,
+CRM-00111,pincode,unfixable -> left blank,000000,
+CRM-00017,full_name,unfixable -> left blank,Unknown,
+CRM-00056,full_name,unfixable -> left blank,customer,
+CRM-00086,full_name,unfixable -> left blank,N/A,
+CRM-00019,phone,unfixable -> left blank,75475xx127,
+CRM-00022,phone,unfixable -> left blank,1234567890,
+CRM-00034,phone,unfixable -> left blank,1234567890,
+CRM-00031,signup_date,unfixable -> left blank,31/02/2021,
+CRM-00033,signup_date,unfixable -> left blank,TBD,
+CRM-00069,signup_date,unfixable -> left blank,TBD,
+CRM-00032,city,unfixable -> left blank,N/A,
+CRM-00093,city,unfixable -> left blank,N/A,
+CRM-00098,city,unfixable -> left blank,N/A,
+CRM-00051,email,unfixable -> left blank,dev.goyal8949rediffmail.com,
+CRM-00085,email,unfixable -> left blank,test@test,
+CRM-00163,email,unfixable -> left blank,NA,

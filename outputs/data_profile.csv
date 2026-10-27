@@ -1,0 +1,7 @@
+field,total_values,missing_or_placeholder,missing_pct,with_stray_spaces,distinct_values
+city,5219,189,3.6,295,139
+email,5219,113,2.2,306,4650
+full_name,5219,263,5.0,472,3034
+phone,5219,47,0.9,0,4820
+pincode,5219,65,1.2,404,4341
+signup_date,5219,98,1.9,0,3597

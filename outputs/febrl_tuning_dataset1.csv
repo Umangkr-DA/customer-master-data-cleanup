@@ -1,0 +1,3 @@
+matcher,t_merge,t_review,dev_precision,dev_recall,dev_f1,over_merged_clusters,review_pairs,em_mode,name_missing_policy,conflict_veto
+fuzzy-rules,0.772,0.0,1.0,0.832,0.9082969432314411,0,96,,,
+fellegi-sunter,22.233,-5.25,1.0,0.782,0.877665544332211,0,115,joint,review,True

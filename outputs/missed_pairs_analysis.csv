@@ -1,0 +1,44 @@
+record_a,record_b,reason,phone,email,name_plus_pincode
+CRM-00137,WEB-00153,no shared phone/email/name+pincode,blank,different,not shared
+CRM-00151,WEB-01088,shared key but a name is blank (single key not accepted),different,same,not shared
+CRM-00188,SALES-00441,shared key but a name is blank (single key not accepted),different,same,not shared
+CRM-00195,WEB-01098,shared key but a name is blank (single key not accepted),different,same,not shared
+CRM-00381,WEB-00026,shared key but a name is blank (single key not accepted),different,same,not shared
+CRM-00480,WEB-00853,shared key but a name is blank (single key not accepted),same,different,not shared
+CRM-00570,SALES-00894,no shared phone/email/name+pincode,blank,blank,not shared
+CRM-00693,SALES-01290,shared key but a name is blank (single key not accepted),same,blank,not shared
+CRM-00792,WEB-01185,shared key but a name is blank (single key not accepted),different,same,not shared
+CRM-00867,SALES-00306,shared key but a name is blank (single key not accepted),blank,same,not shared
+CRM-00867,WEB-01232,no shared phone/email/name+pincode,blank,different,not shared
+CRM-00983,WEB-00856,shared key but a name is blank (single key not accepted),different,same,not shared
+CRM-01031,WEB-01131,no shared phone/email/name+pincode,different,different,not shared
+CRM-01166,SALES-00764,shared key but a name is blank (single key not accepted),different,same,not shared
+CRM-01249,SALES-00260,no shared phone/email/name+pincode,blank,blank,not shared
+CRM-01269,SALES-01258,shared key but a name is blank (single key not accepted),different,same,not shared
+CRM-01276,SALES-00869,shared key but a name is blank (single key not accepted),same,different,not shared
+CRM-01304,WEB-00337,shared key but a name is blank (single key not accepted),same,blank,not shared
+CRM-01306,SALES-01234,shared key but a name is blank (single key not accepted),same,blank,not shared
+CRM-01377,SALES-00712,shared key but a name is blank (single key not accepted),different,same,not shared
+CRM-01468,SALES-00238,no shared phone/email/name+pincode,different,blank,not shared
+CRM-01580,SALES-00960,shared key but a name is blank (single key not accepted),same,different,not shared
+CRM-01580,WEB-01566,shared key but a name is blank (single key not accepted),same,different,not shared
+CRM-01631,WEB-00406,shared key but a name is blank (single key not accepted),different,same,not shared
+CRM-01660,WEB-00923,shared key but a name is blank (single key not accepted),different,same,not shared
+CRM-01663,WEB-00276,shared key but a name is blank (single key not accepted),blank,same,not shared
+CRM-01734,SALES-00040,shared key but a name is blank (single key not accepted),same,different,not shared
+CRM-01734,WEB-00705,shared key but a name is blank (single key not accepted),same,different,not shared
+SALES-00099,WEB-00748,shared key but a name is blank (single key not accepted),different,same,not shared
+SALES-00218,WEB-01708,shared key but a name is blank (single key not accepted),same,blank,not shared
+SALES-00273,WEB-01124,shared key but a name is blank (single key not accepted),different,same,not shared
+SALES-00289,WEB-00812,shared key but a name is blank (single key not accepted),blank,same,not shared
+SALES-00409,WEB-00657,no shared phone/email/name+pincode,different,different,not shared
+SALES-00516,WEB-00066,shared key but a name is blank (single key not accepted),same,different,not shared
+SALES-00791,WEB-00659,shared key but a name is blank (single key not accepted),same,blank,not shared
+SALES-00966,WEB-00481,shared key but a name is blank (single key not accepted),different,same,not shared
+SALES-01004,WEB-00339,shared key but a name is blank (single key not accepted),blank,same,not shared
+SALES-01036,WEB-01053,no shared phone/email/name+pincode,different,blank,not shared
+SALES-01157,WEB-00852,shared key but a name is blank (single key not accepted),different,same,not shared
+SALES-01188,WEB-00028,shared key but a name is blank (single key not accepted),blank,same,not shared
+SALES-01487,WEB-01393,shared key but a name is blank (single key not accepted),same,different,not shared
+SALES-01681,WEB-01414,shared key but a name is blank (single key not accepted),different,same,not shared
+SALES-01732,WEB-01622,shared key but a name is blank (single key not accepted),same,different,not shared

@@ -1,0 +1,19 @@
+metric,value,definition
+true_customers,4517.0,
+predicted_golden_records,4557.0,
+true_duplicate_pairs,742.0,
+predicted_pairs,699.0,
+true_positive_pairs,699.0,Pairs merged by the pipeline that the answer key confirms
+false_positive_pairs,0.0,Pairs merged by the pipeline that the answer key says are different customers
+false_negative_pairs,43.0,True duplicate pairs the pipeline did not merge
+precision,1.0,"TP / (TP + FP) over record PAIRS: of the pairs the pipeline merged, how many are truly the same customer"
+recall,0.9420485175202157,"TP / (TP + FN) over record PAIRS: of the truly duplicate pairs, how many the pipeline merged"
+f1,0.9701596113809854,
+bcubed_precision,1.0,
+bcubed_recall,0.9921440889059207,
+bcubed_f1,0.996056554775416,
+purity,1.0,
+customers_reproduced_exactly,4477.0,True customers whose records ended up in one cluster containing nothing else
+multi_record_customers,662.0,
+multi_record_customers_reproduced_exactly,622.0,
+over_merged_clusters,0.0,Predicted clusters containing records of more than one true customer

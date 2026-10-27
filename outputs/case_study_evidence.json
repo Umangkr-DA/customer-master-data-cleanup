@@ -1,0 +1,223 @@
+{
+  "matcher_config": {
+    "matcher": "fellegi-sunter",
+    "schema": "customer",
+    "t_merge": 4.8712,
+    "t_review": -0.2749514790657084,
+    "name_missing_policy": "review",
+    "conflict_veto": true,
+    "em_iterations": 40,
+    "u_sample_pairs": 150000,
+    "seed": 7,
+    "em_mode": "joint",
+    "u_prior_strength": 50.0,
+    "block_rules": [
+      [
+        "phone",
+        [
+          "phone"
+        ],
+        200
+      ],
+      [
+        "email",
+        [
+          "email"
+        ],
+        200
+      ],
+      [
+        "phone-prefix5",
+        [
+          "phone"
+        ],
+        200
+      ],
+      [
+        "phone-suffix5",
+        [
+          "phone"
+        ],
+        200
+      ],
+      [
+        "name+pincode",
+        [
+          "first",
+          "last",
+          "pincode"
+        ],
+        300
+      ],
+      [
+        "name+city",
+        [
+          "city",
+          "first",
+          "last"
+        ],
+        120
+      ]
+    ],
+    "code_sha": "4d5449b44086"
+  },
+  "dev_false_negative_pairs": 387,
+  "fn_by_stage": {
+    "never_a_candidate (blocking)": 136,
+    "scored_in_review_band": 238,
+    "scored_below_review_band": 13
+  },
+  "fn_phone_and_email_identical": {
+    "pairs": 49,
+    "of_which_a_name_blank": 48
+  },
+  "candidates_phone_email_identical_and_blank_name": {
+    "pairs": 61,
+    "truly_same_customer": 48
+  },
+  "never_candidate_phone_and_email_both_differ_or_blank": 136,
+  "false_merges": {
+    "pairs": 10,
+    "same_phone": 6,
+    "identical_name": 2
+  },
+  "examples": {
+    "missed_blank_name": {
+      "pair": [
+        "CRM-01441",
+        "SALES-00790"
+      ],
+      "same_customer": true,
+      "in_candidates": true,
+      "score": 51.11,
+      "decision": "review",
+      "evidence": "first=- last=- phone=2 email=2 city=- pincode=1 date=2",
+      "records": {
+        "CRM-01441": {
+          "full_name": "Poojaa Arora",
+          "phone": "8640833634",
+          "email": "pooja.arora9403@hotmail.com",
+          "city": null,
+          "pincode": "226034",
+          "signup_date": "2020-03-24"
+        },
+        "SALES-00790": {
+          "full_name": null,
+          "phone": "8640833634",
+          "email": "pooja.arora9403@hotmail.com",
+          "city": "Lucknow",
+          "pincode": "226034",
+          "signup_date": "2020-03-24"
+        }
+      }
+    },
+    "false_merge_phone_off_by_one": {
+      "pair": [
+        "SALES-00919",
+        "WEB-01748"
+      ],
+      "same_customer": false,
+      "in_candidates": true,
+      "score": 9.12,
+      "decision": "merge",
+      "evidence": "first=3 last=3 phone=1 email=1 city=1 pincode=1 date=0",
+      "records": {
+        "SALES-00919": {
+          "full_name": "Salman Sharma",
+          "phone": "6699088705",
+          "email": "salman78.sharma@hotmail.com",
+          "city": "Mumbai",
+          "pincode": "400027",
+          "signup_date": "2022-10-12"
+        },
+        "WEB-01748": {
+          "full_name": "Sharma Salman",
+          "phone": "6699088704",
+          "email": "salman.sharma2080@gmail.com",
+          "city": "Mumbai",
+          "pincode": "400027",
+          "signup_date": "2026-07-25"
+        }
+      }
+    },
+    "false_merge_namesake_household": {
+      "pair": [
+        "CRM-00131",
+        "SALES-01324"
+      ],
+      "same_customer": false,
+      "in_candidates": true,
+      "score": 21.72,
+      "decision": "merge",
+      "evidence": "first=3 last=3 phone=2 email=1 city=1 pincode=1 date=1",
+      "records": {
+        "CRM-00131": {
+          "full_name": "Rajesh Shah",
+          "phone": "8743490366",
+          "email": "rajesh.shah8139@gmail.com",
+          "city": "Indore",
+          "pincode": "452022",
+          "signup_date": "2026-04-01"
+        },
+        "SALES-01324": {
+          "full_name": "Rajesh Shah",
+          "phone": "8743490366",
+          "email": "rajesh59.shah@hotmail.com",
+          "city": "Indore",
+          "pincode": "452022",
+          "signup_date": "2025-11-25"
+        }
+      }
+    },
+    "missed_contacts_changed": {
+      "pair": [
+        "CRM-00240",
+        "SALES-01215"
+      ],
+      "same_customer": true,
+      "in_candidates": true,
+      "score": -1.75,
+      "decision": "non-match",
+      "evidence": "first=2 last=3 phone=0 email=1 city=1 pincode=1 date=0",
+      "records": {
+        "CRM-00240": {
+          "full_name": "Aditta Garg",
+          "phone": "6571747527",
+          "email": "aditya73742@yahoo.com",
+          "city": "Kolkata",
+          "pincode": "700060",
+          "signup_date": "2018-08-13"
+        },
+        "SALES-01215": {
+          "full_name": "Garg Aditya",
+          "phone": "9078292702",
+          "email": "aditya10693@gmail.com",
+          "city": "Kolkata",
+          "pincode": "700060",
+          "signup_date": "2017-04-07"
+        }
+      }
+    }
+  },
+  "survivorship": {
+    "correctly_merged_clusters_with_conflicting_names": 379,
+    "one_off_variant_wins_while_another_spelling_appears_2plus_times_PREVIOUS_RULE": 24,
+    "one_off_variant_wins_while_another_spelling_appears_2plus_times_CURRENT_RULE": 1,
+    "golden_name_is_reversed_order_of_another_member": 56,
+    "example": {
+      "golden_id": "G01406",
+      "names": [
+        "R Pillai",
+        "R Pillai",
+        "Rahl Pillai"
+      ],
+      "golden_name": "Rahl Pillai",
+      "modal_name": "R Pillai",
+      "records": [
+        "CRM-01475",
+        "WEB-00733",
+        "SALES-01389"
+      ]
+    }
+  }
+}

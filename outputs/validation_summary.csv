@@ -1,0 +1,8 @@
+rule_id,field,definition,raw_total,raw_passed,raw_failed,raw_pass_rate,std_total,std_passed,std_failed,std_pass_rate,golden_total,golden_passed,golden_failed,golden_pass_rate,raw_to_std_pp,raw_to_golden_pp
+R1,Name,"Full name present, 2+ alphabetic words, Title Case, no stray spaces",5219,3394,1825,0.6503,5219,4928,291,0.9442,4557,4316,241,0.9471,29.4,29.7
+R2,Phone,"Exactly 10 digits, Indian mobile (starts 6-9), not one repeated digit",5219,3292,1927,0.6308,5219,4951,268,0.9486,4557,4351,206,0.9548,31.8,32.4
+R3,Email,"Present, lowercase, valid user@domain.tld format",5219,3740,1479,0.7166,5219,4979,240,0.954,4557,4365,192,0.9579,23.7,24.1
+R4,City,Present and one of the 14 reference cities (canonical spelling),5219,3415,1804,0.6543,5219,4970,249,0.9523,4557,4359,198,0.9566,29.8,30.2
+R5,Pincode,"6 digits, first digit 1-8, prefix agrees with the city when city is known",5219,3370,1849,0.6457,5219,4990,229,0.9561,4557,4382,175,0.9616,31.0,31.6
+R6,Signup date,"ISO yyyy-mm-dd, real calendar date, between 2015-01-01 and run date",5219,3402,1817,0.6518,5219,4950,269,0.9485,4557,4346,211,0.9537,29.7,30.2
+ALL,All 6 rules,Record passes every rule,5219,403,4816,0.0772,5219,3856,1363,0.7388,4557,3494,1063,0.7667,66.2,69.0

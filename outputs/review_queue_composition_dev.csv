@@ -1,0 +1,5 @@
+name_conflict,reason_in_queue,pairs,true_matches,share_true
+False,blank name,63,0,0.0
+False,review band,102,48,0.47058823529411764
+False,review band + blank name,255,181,0.7098039215686275
+True,review band,510,9,0.01764705882352941

@@ -1,0 +1,67 @@
+{
+  "assumptions_file": "config/assumptions.json",
+  "assumptions": {
+    "customer_base_records": 1000000,
+    "messages_per_record_per_year": 12,
+    "share_of_messages_reaching_duplicates": 0.8,
+    "cost_per_message_inr": 0.25,
+    "cost_per_wrong_merge_inr": 200,
+    "records_affected_per_over_merged_cluster": 2,
+    "reviewer_minutes_per_pair": 1.5,
+    "reviewer_cost_per_hour_inr": 400,
+    "review_checkpoint_pairs_per_1000_records": 50,
+    "reviewer_accuracy": 0.95,
+    "relative_change": 0.5
+  },
+  "measured_rates": {
+    "source": "held-out ledger entry of the frozen Fellegi-Sunter matcher (read from the ledger, not re-run)",
+    "records": 5174,
+    "duplicates_removed_correct": 0.17124081948202552,
+    "duplicates_missed": 0.05566293003478933,
+    "over_merged_clusters": 0.003285659064553537,
+    "review_extra_dups_per_pair": 0.748,
+    "review_extra_overmerges_per_pair": 0.012,
+    "approximation": "duplicates_removed_correct = records - predicted clusters - over-merged clusters (a lower bound on correct removals); duplicates_missed = true redundant records - correct removals."
+  },
+  "review_rates": {
+    "source": "outputs/review_simulation.csv (dev, SIMULATED reviewer, ranked queue)",
+    "reviewed_pairs_used": 250.0,
+    "recall_before": 0.7349,
+    "recall_after": 0.863,
+    "review_extra_dups_per_pair": 0.748,
+    "review_extra_overmerges_per_pair": 0.012
+  },
+  "reachability": {
+    "dataset": "dev",
+    "records": 5171,
+    "customers_after_matching": 4276,
+    "records_reachable_raw": 0.8813,
+    "records_reachable_standardized": 0.987,
+    "customers_reachable_raw_any_record": 0.8948,
+    "customers_reachable_standardized_any_record": 0.9888,
+    "customers_reachable_golden": 0.9888,
+    "note": "reachable = a value passing the project's strict phone (R2) or e-mail (R3) rule. The raw figures are format-strict: many raw numbers fail only because of formatting that standardization fixes, so 'raw' understates what a human could use."
+  },
+  "estimate": {
+    "customer_base_records": 1000000,
+    "duplicates_removed": 171241,
+    "duplicates_missed": 55663,
+    "over_merged_clusters": 3286,
+    "duplicate_messages_avoided_per_year": 1643912,
+    "duplicate_messages_still_sent_per_year": 534364,
+    "gross_saving_inr_per_year": 410978,
+    "wrong_merge_cost_inr_per_year": 657132,
+    "messages_potentially_misdirected_per_year": 78856,
+    "net_saving_without_review_inr_per_year": -246154,
+    "review_pairs": 50000,
+    "review_cost_inr": 500000,
+    "review_extra_duplicates_found": 37400,
+    "review_saving_inr_per_year": 89760,
+    "review_extra_over_merged_clusters": 600,
+    "review_error_cost_inr": 120000,
+    "net_saving_with_review_inr_per_year": -776394,
+    "review_pays_for_itself": false,
+    "break_even_cost_per_wrong_merge_inr": 125.08,
+    "break_even_value_per_extra_duplicate_inr": 16.58
+  }
+}

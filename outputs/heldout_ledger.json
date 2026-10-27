@@ -1,0 +1,207 @@
+{
+  "318e00e319fee2b3": {
+    "config": {
+      "matcher": "exact-key",
+      "sql_sha256": "87695ffee76cffc8"
+    },
+    "git_commit": "9d7c0e1",
+    "metrics": {
+      "bcubed_f1": 0.9334789738944997,
+      "bcubed_precision": 0.9950199716531375,
+      "bcubed_recall": 0.879107073830692,
+      "candidate_pairs": 1449,
+      "dataset": "heldout",
+      "f1": 0.6291512915129152,
+      "false_negative_pairs": 771,
+      "false_positive_pairs": 33,
+      "matcher": "exact-key",
+      "over_merged_clusters": 23,
+      "pair_completeness": 0.7543014452856159,
+      "precision": 0.9538461538461539,
+      "predicted_clusters": 4562,
+      "predicted_pairs": 715,
+      "purity": 0.9955546965597217,
+      "recall": 0.46937370956641433,
+      "records": 5174,
+      "runtime_s": 0.058,
+      "true_customers": 4000,
+      "true_pairs": 1453,
+      "true_positive_pairs": 682
+    },
+    "note": "B-cubed/purity added by a deterministic re-run of the same frozen config; pair metrics identical",
+    "uncommitted_changes_in_src_or_sql": false
+  },
+  "421727ef4b3925f5": {
+    "config": {
+      "block_rules": [
+        [
+          "phone",
+          [
+            "phone"
+          ],
+          200
+        ],
+        [
+          "email",
+          [
+            "email"
+          ],
+          200
+        ],
+        [
+          "phone-prefix5",
+          [
+            "phone"
+          ],
+          200
+        ],
+        [
+          "phone-suffix5",
+          [
+            "phone"
+          ],
+          200
+        ],
+        [
+          "name+pincode",
+          [
+            "first",
+            "last",
+            "pincode"
+          ],
+          300
+        ],
+        [
+          "name+city",
+          [
+            "city",
+            "first",
+            "last"
+          ],
+          120
+        ]
+      ],
+      "code_sha": "4d5449b44086",
+      "conflict_veto": true,
+      "em_iterations": 40,
+      "em_mode": "joint",
+      "matcher": "fellegi-sunter",
+      "name_missing_policy": "review",
+      "schema": "customer",
+      "seed": 7,
+      "t_merge": 4.8712,
+      "t_review": -0.2749514790657086,
+      "u_prior_strength": 50.0,
+      "u_sample_pairs": 150000
+    },
+    "git_commit": "9d7c0e1",
+    "metrics": {
+      "bcubed_f1": 0.9670390740560914,
+      "bcubed_precision": 0.9955482540909676,
+      "bcubed_recall": 0.9401172529313233,
+      "candidate_pairs": 13709,
+      "dataset": "heldout",
+      "f1": 0.8375535644721465,
+      "false_negative_pairs": 378,
+      "false_positive_pairs": 39,
+      "matcher": "fellegi-sunter",
+      "over_merged_clusters": 17,
+      "pair_completeness": 0.9015829318651066,
+      "precision": 0.9649910233393177,
+      "predicted_clusters": 4271,
+      "predicted_pairs": 1114,
+      "purity": 0.9963277928102049,
+      "recall": 0.7398485891259463,
+      "records": 5174,
+      "runtime_s": 2.013,
+      "true_customers": 4000,
+      "true_pairs": 1453,
+      "true_positive_pairs": 1075
+    },
+    "note": "B-cubed/purity added by a deterministic re-run of the same frozen config; pair metrics identical",
+    "uncommitted_changes_in_src_or_sql": false
+  },
+  "42361fb4410a0900": {
+    "config": {
+      "block_rules": [
+        [
+          "phone",
+          [
+            "phone"
+          ],
+          200
+        ],
+        [
+          "email",
+          [
+            "email"
+          ],
+          200
+        ],
+        [
+          "phone-prefix5",
+          [
+            "phone"
+          ],
+          200
+        ],
+        [
+          "phone-suffix5",
+          [
+            "phone"
+          ],
+          200
+        ],
+        [
+          "name+pincode",
+          [
+            "first",
+            "last",
+            "pincode"
+          ],
+          300
+        ],
+        [
+          "name+city",
+          [
+            "city",
+            "first",
+            "last"
+          ],
+          120
+        ]
+      ],
+      "code_sha": "3b4647bb2820",
+      "matcher": "fuzzy-rules",
+      "schema": "customer",
+      "t_merge": 0.8,
+      "t_review": 0.8
+    },
+    "git_commit": "9d7c0e1",
+    "metrics": {
+      "bcubed_f1": 0.9479005604538291,
+      "bcubed_precision": 0.9964695271227935,
+      "bcubed_recall": 0.9038461538461539,
+      "candidate_pairs": 13709,
+      "dataset": "heldout",
+      "f1": 0.7175043327556326,
+      "false_negative_pairs": 625,
+      "false_positive_pairs": 27,
+      "matcher": "fuzzy-rules",
+      "over_merged_clusters": 15,
+      "pair_completeness": 0.9015829318651066,
+      "precision": 0.968421052631579,
+      "predicted_clusters": 4450,
+      "predicted_pairs": 855,
+      "purity": 0.9969076149980672,
+      "recall": 0.5698554714384033,
+      "records": 5174,
+      "runtime_s": 0.214,
+      "true_customers": 4000,
+      "true_pairs": 1453,
+      "true_positive_pairs": 828
+    },
+    "note": "B-cubed/purity added by a deterministic re-run of the same frozen config; pair metrics identical",
+    "uncommitted_changes_in_src_or_sql": false
+  }
+}

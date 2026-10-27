@@ -1,0 +1,68 @@
+{
+  "_about": "ASSUMPTIONS, not measurements. Every business figure in outputs/impact_estimate.json is computed from these values and from rates measured on the synthetic data. Change a value, re-run `python scripts/run_phase6.py`, and the estimate and its sensitivity table update. Currency is INR only because the project's records are Indian; all amounts are placeholders to be replaced with the organisation's own.",
+  "scenario": {
+    "customer_base_records": {
+      "value": 1000000,
+      "unit": "source records",
+      "note": "Size of the customer file the rates are scaled to. Rates are measured per record on the synthetic data."
+    }
+  },
+  "communication": {
+    "messages_per_record_per_year": {
+      "value": 12,
+      "unit": "messages",
+      "note": "Marketing and service messages (email/SMS) one record receives per year."
+    },
+    "share_of_messages_reaching_duplicates": {
+      "value": 0.8,
+      "unit": "fraction",
+      "note": "Share of campaigns that do not already de-duplicate on the sending side, so a duplicate record really is messaged twice."
+    },
+    "cost_per_message_inr": {
+      "value": 0.25,
+      "unit": "INR",
+      "note": "Blended cost of one email/SMS including platform fees. Does not include customer annoyance or unsubscribe cost."
+    }
+  },
+  "errors": {
+    "cost_per_wrong_merge_inr": {
+      "value": 200,
+      "unit": "INR per over-merged cluster",
+      "note": "Cost of one cluster that mixes two customers: a misdirected message, a support call, a manual split."
+    },
+    "records_affected_per_over_merged_cluster": {
+      "value": 2,
+      "unit": "records",
+      "note": "Records whose communication is wrong while a cluster mixes customers."
+    }
+  },
+  "review": {
+    "reviewer_minutes_per_pair": {
+      "value": 1.5,
+      "unit": "minutes",
+      "note": "Time for an analyst to judge one pair from the evidence columns of the review queue."
+    },
+    "reviewer_cost_per_hour_inr": {
+      "value": 400,
+      "unit": "INR per hour",
+      "note": "Fully loaded analyst cost."
+    },
+    "review_checkpoint_pairs_per_1000_records": {
+      "value": 50,
+      "unit": "pairs reviewed per 1,000 records",
+      "note": "How much of the ranked queue is reviewed. 50 per 1,000 records is about 250 pairs on the 5,171-record dev data, a point on the simulated curve in outputs/review_simulation.csv."
+    },
+    "reviewer_accuracy": {
+      "value": 0.95,
+      "unit": "fraction",
+      "note": "Chance a reviewer's verdict is right. Only 1.0 and 0.95 are simulated in outputs/review_simulation.csv, so those are the two allowed values. This selects which simulated curve supplies the review rates; it is not varied in the sensitivity table."
+    }
+  },
+  "sensitivity": {
+    "relative_change": {
+      "value": 0.5,
+      "unit": "fraction",
+      "note": "Each assumption above is moved down and up by this fraction, one at a time, to show which ones the estimate depends on."
+    }
+  }
+}

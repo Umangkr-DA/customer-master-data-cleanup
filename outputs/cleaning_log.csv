@@ -1,0 +1,24 @@
+field,outcome,n
+city,already clean,3415
+city,blank in source,62
+city,standardized,1555
+city,unfixable -> left blank,187
+email,already clean,3447
+email,blank in source,51
+email,standardized,1532
+email,unfixable -> left blank,189
+full_name,already clean,3415
+full_name,blank in source,73
+full_name,standardized,1541
+full_name,unfixable -> left blank,190
+phone,already clean,3292
+phone,standardized,1659
+phone,unfixable -> left blank,268
+pincode,already clean,3370
+pincode,blank in source,65
+pincode,standardized,1620
+pincode,unfixable -> left blank,164
+signup_date,already clean,3402
+signup_date,blank in source,48
+signup_date,standardized,1548
+signup_date,unfixable -> left blank,221

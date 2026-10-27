@@ -1,0 +1,6 @@
+{
+  "_about": "Data-quality monitoring settings. A rule is flagged when its golden-record pass rate falls by more than max_drop_pp percentage points versus the previous run in outputs/dq_history.csv.",
+  "max_drop_pp": 2.0,
+  "stage": "golden",
+  "rules": ["R1", "R2", "R3", "R4", "R5", "R6"]
+}

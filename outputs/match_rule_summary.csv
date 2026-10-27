@@ -1,0 +1,8 @@
+match_rule,match_confidence,pairs
+phone+email+name_pincode,High,249
+phone+name_pincode,High,177
+email+name_pincode,High,122
+phone+email,High,66
+name_pincode,Medium,40
+phone,Medium,27
+email,Medium,18

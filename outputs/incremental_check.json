@@ -1,0 +1,101 @@
+{
+  "dataset": "dev",
+  "config": {
+    "t_merge": 4.8712,
+    "t_review": -0.2749514790657086,
+    "name_missing_policy": "review",
+    "conflict_veto": true,
+    "em_mode": "joint"
+  },
+  "split": {
+    "base_records": 4137,
+    "batches": [
+      258,
+      258,
+      258,
+      260
+    ],
+    "seed": 5
+  },
+  "incremental_equals_rebuild_frozen": true,
+  "cap_crossed_blocks_total": 0,
+  "pairs_only_in_incremental_vs_frozen_rebuild": 0,
+  "pairs_only_in_frozen_rebuild": 0,
+  "vs_refit": {
+    "pairs_only_in_incremental": 2,
+    "pairs_only_in_refit": 0,
+    "jaccard": 0.9981
+  },
+  "quality": {
+    "incremental": {
+      "precision": 0.979,
+      "recall": 0.7349,
+      "f1": 0.8396,
+      "merged_pairs": 1035,
+      "over_merged_clusters": 9
+    },
+    "rebuild_frozen": {
+      "precision": 0.979,
+      "recall": 0.7349,
+      "f1": 0.8396,
+      "merged_pairs": 1035,
+      "over_merged_clusters": 9
+    },
+    "rebuild_refit": {
+      "precision": 0.9826,
+      "recall": 0.7349,
+      "f1": 0.8409,
+      "merged_pairs": 1033,
+      "over_merged_clusters": 8
+    }
+  },
+  "runtime_s": {
+    "bootstrap_on_base": 2.75,
+    "incremental_all_batches": 0.35,
+    "incremental_per_batch_mean": 0.087,
+    "rebuild_frozen_weights": 0.33,
+    "rebuild_refit_full_pipeline": 2.44
+  },
+  "batches": [
+    {
+      "batch": 1,
+      "new_records": 258,
+      "scored_pairs": 1259,
+      "merged_pairs": 66,
+      "clusters_touched": 255,
+      "clusters_retired": 31,
+      "cap_crossed_blocks": 0,
+      "runtime_s": 0.084
+    },
+    {
+      "batch": 2,
+      "new_records": 258,
+      "scored_pairs": 939,
+      "merged_pairs": 91,
+      "clusters_touched": 256,
+      "clusters_retired": 36,
+      "cap_crossed_blocks": 0,
+      "runtime_s": 0.086
+    },
+    {
+      "batch": 3,
+      "new_records": 258,
+      "scored_pairs": 1176,
+      "merged_pairs": 98,
+      "clusters_touched": 252,
+      "clusters_retired": 35,
+      "cap_crossed_blocks": 0,
+      "runtime_s": 0.094
+    },
+    {
+      "batch": 4,
+      "new_records": 260,
+      "scored_pairs": 1453,
+      "merged_pairs": 107,
+      "clusters_touched": 258,
+      "clusters_retired": 29,
+      "cap_crossed_blocks": 0,
+      "runtime_s": 0.084
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+assumption,base_value,low_value,high_value,net_saving_with_review_inr_per_year_low,net_saving_with_review_inr_per_year_base,net_saving_with_review_inr_per_year_high,swing
+cost_per_wrong_merge_inr,200.0,100.0,300.0,-387828,-776394,-1164960,777132
+review_checkpoint_pairs_per_1000_records,50.0,25.0,75.0,-511274,-776394,-1041514,530240
+messages_per_record_per_year,12.0,6.0,18.0,-1026763,-776394,-526025,500738
+cost_per_message_inr,0.25,0.125,0.375,-1026763,-776394,-526025,500738
+reviewer_minutes_per_pair,1.5,0.75,2.25,-526394,-776394,-1026394,500000
+reviewer_cost_per_hour_inr,400.0,200.0,600.0,-526394,-776394,-1026394,500000
+share_of_messages_reaching_duplicates,0.8,0.4,1.0,-1026763,-776394,-651209,375554
+records_affected_per_over_merged_cluster,2.0,1.0,3.0,-776394,-776394,-776394,0

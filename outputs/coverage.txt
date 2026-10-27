@@ -1,0 +1,43 @@
+........................................................................ [ 28%]
+........................................................................ [ 56%]
+........................................................................ [ 85%]
+......................................                                   [100%]
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.12.3-final-0 ________________
+
+Name                                             Stmts   Miss  Cover   Missing
+------------------------------------------------------------------------------
+src/customer_master/cluster_metrics.py              20      1    95%   24
+src/customer_master/common.py                       86      2    98%   150, 166
+src/customer_master/comparison.py                   44     44     0%   7-69
+src/customer_master/dashboard_data.py              150      1    99%   334
+src/customer_master/datasets.py                     42      8    81%   60-67, 76
+src/customer_master/demo_data.py                    20      2    90%   24-25
+src/customer_master/duckdb_port.py                  54      1    98%   87
+src/customer_master/experiments.py                  59      4    93%   20, 46-51, 100
+src/customer_master/febrl.py                        23     23     0%   8-41
+src/customer_master/golden_record.py                17      3    82%   15, 18, 25
+src/customer_master/heldout.py                      41      2    95%   33-38
+src/customer_master/impact.py                       88      3    97%   50-51, 55
+src/customer_master/incremental.py                 148      1    99%   194
+src/customer_master/matchers/base.py                32      1    97%   58
+src/customer_master/matchers/exact.py               29      1    97%   42
+src/customer_master/matchers/fellegi_sunter.py     198     52    74%   54, 125-150, 197-217, 269, 276, 301-302
+src/customer_master/matchers/fs_scalable.py        169      7    96%   123-125, 129-131, 178
+src/customer_master/matchers/fuzzy.py               64     26    59%   36, 46, 54, 57-63, 67-81, 87
+src/customer_master/matching.py                     36      2    94%   38, 75
+src/customer_master/monitoring.py                   57     17    70%   18, 62-79
+src/customer_master/multiseed.py                    28      7    75%   34-42
+src/customer_master/profile.py                      40      2    95%   35, 53
+src/customer_master/reporting.py                   376     89    76%   59, 85-142, 154-213, 694
+src/customer_master/review.py                       88      1    99%   87
+src/customer_master/schema.py                      136     20    85%   93-97, 131-132, 223-242, 246-247
+src/customer_master/similarity.py                   86      3    97%   27, 30, 73
+src/customer_master/standardize.py                  40      1    98%   79
+src/customer_master/validation.py                  103      2    98%   140, 275
+------------------------------------------------------------------------------
+TOTAL                                             3002    326    89%
+
+13 files skipped due to complete coverage.
+Required test coverage of 85% reached. Total coverage: 89.14%
+254 passed in 63.16s (0:01:03)
